@@ -27,7 +27,8 @@ function onSetData(evt) {
 
 function onFormSubmit(evt) {
     evt.preventDefault();
-    console.log(`e-mail: ${refs.email.value}, message: ${refs.message.value}`)
+    // console.log(`e-mail: ${refs.email.value}, message: ${refs.message.value}`)
+    console.log({email: refs.email.value, password: refs.message.value})
     evt.target.reset();
     localStorage.removeItem(LOCALSTORAGE_KEY)
 }
